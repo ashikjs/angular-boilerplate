@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpRequest} from '@angular/common/http';
 import {catchError, retry} from 'rxjs/operators';
-import {environment} from '../../../environments/environment';
+import {environment} from '@env';
 import {ErrorHandlerService} from '../core/handlers/error-handler.service';
 import {User} from './user.model';
 
@@ -12,7 +12,7 @@ import {User} from './user.model';
 })
 export class AuthService extends ErrorHandlerService {
 
-  apiUrl = environment.apiUrl + '/auth';
+  apiUrl = environment.API_ENDPOINT + '/auth';
   cachedRequests: Array<HttpRequest<any>> = [];
   // Observable source
   // private _userLogged = new BehaviorSubject<any>(null);
