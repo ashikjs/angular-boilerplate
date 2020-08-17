@@ -1,0 +1,25 @@
+a.btn-main,
+button.btn-main,
+.btn-main {
+
+  @include media('sm-small') {
+    font-size: 12px;
+    line-height: 37px;
+  }
+
+  &.btn-sm {
+
+
+  }
+  &.btn-lg {
+
+  }
+
+  &:hover {
+
+  }
+
+  &.secondary {
+
+  }
+}

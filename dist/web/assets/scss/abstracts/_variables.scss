@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Base colors
+$white: #ffffff;
+$black: #000000;
+//$color-scheme: @@@@
+
+/// Main brand color
+/// @type Color
+$brand-color: #7952b3;
+$brand-concrete-body: #F2F2F2;
+$brand-white: #ffffff;
+$text-color: #111111;
+$a-color: $black;
+
+/// @type List
+$font-primary: 'Novecento Wide', sans-serif;
+$font-secondary: 'Nexa', sans-serif;
+
+/* Border Color */
+$border-color: #E1E4E7;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/' !default;
+//$assets-dir: 'assets/' !default;
+//$images-dir: '/assets/img/' !default;
+//$plugins-dir: '/assets/plugins/' !default;
