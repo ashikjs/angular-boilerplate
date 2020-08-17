@@ -1,0 +1,33 @@
+@import "base/fonts";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+.footer-wrap {
+  background-color: rgba($color: #000, $alpha: 0.25);
+}
+.copyright {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.copyright p {
+  padding: 0;
+  margin: 0;
+  font-family: 'nexa-light', sans-serif;
+}
+
+.copyright p a {
+  color: $brand-color;
+}
+
+.copyright p.text-right {
+  margin-top: 5px;
+}
+@include media('sm-small') {
+  .copyright p {
+    padding: 0 20px;
+  }
+
+  .copyright {
+    padding: 5px 0;
+  }
+}

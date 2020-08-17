@@ -1,0 +1,29 @@
+.contact-us {
+  padding: 5px 0 17px;
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .title {
+    padding: 60px 0 0 0;
+
+    h2 {
+      font-size: 26px;
+      line-height: 50px;
+    }
+  }
+
+  .contact-form {
+    margin-top: 40px;
+
+    textarea {
+      min-height: 260px;
+      text-transform: capitalize !important;
+    }
+  }
+
+  .contact-btn {
+    margin-top: 20px;
+  }
+}
