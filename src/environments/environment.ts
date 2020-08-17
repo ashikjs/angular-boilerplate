@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:8000/api',
+  API_ENDPOINT: 'https://samples.openweathermap.org/data/2.5/',
 };
 
 /*
