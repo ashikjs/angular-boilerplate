@@ -23,12 +23,12 @@ export class HomeService {
   public getWeather(weather): Observable<WeatherResponse> {
     // const uri = `${this.apiUri}/users?page=${page}`;
 
-    const uri = `${this.apiUri}/weather?zip=${weather.zip},${weather.countryCode}&appid=${weather.appid}`;
+    const uri = `${this.apiUri}/weather?q=${weather.city},${weather.countryCode}&appid=${weather.appid}`;
     const token = localStorage.getItem('token');
 
     const headers = {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
+      // 'Content-Type': 'application/json',
+      // Authorization: `Bearer ${token}`,
       Accept: 'application/json',
     };
 
@@ -37,10 +37,9 @@ export class HomeService {
         retry(1)
       )
       .pipe(map((res) => {
-        console.log('API RESPONSE ', res);
-        res.data = res.data.map(
-          (data): Weather => new Weather().deserialize(data)
-        );
+        // res.data = res.data.map(
+        //   (data): Weather => new Weather().deserialize(data)
+        // );
         // res.pagination = new Pagination().deserialize(res.meta.pagination);
         return res;
       }));

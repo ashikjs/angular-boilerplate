@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_ENDPOINT: 'https://samples.openweathermap.org/data/2.5/',
+  API_ENDPOINT: 'https://api.openweathermap.org/data/2.5',
 };
 
 /*

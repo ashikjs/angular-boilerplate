@@ -15,9 +15,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     const weather = {
-      zip: '94040',
-      countryCode: 'us',
-      appid: '439d4b804bc8187953eb36d2a8c26a02',
+      city: 'London',
+      countryCode: 'uk',
+      appid: 'f7686d5151519aa153773553f15b529f',
     };
 
 
